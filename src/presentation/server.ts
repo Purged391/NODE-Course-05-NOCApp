@@ -4,7 +4,7 @@ import { FileSystemDataSource } from "../infrastructure/datasources/file-system.
 import { MongoDBDatasource } from "../infrastructure/datasources/mongodb.datasource";
 import { PostgresDatasource } from "../infrastructure/datasources/postgres.datasource";
 import { LogRepositoryImpl } from "../infrastructure/repositories/log.repository.impl";
-import { CronService } from "./cron-service";
+import { CronService } from "./cron/cron-service";
 import { EmailService } from "./email/email.service";
 
 const fsLogRepository = new LogRepositoryImpl(

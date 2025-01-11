@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer';
 import { envs } from '../../config/pluggins/envs.plugin';
 
-interface SendEmailOptions{
+export interface SendEmailOptions{
     to: string | string[];
     subject: string;
     html: string;
@@ -14,6 +14,7 @@ interface Attachment {
 }
 
 export class EmailService{
+    //!DEUDA TECNICA. Deberia ir en el constructor
     private transporter = nodemailer.createTransport({
         service: envs.MAILER_SERVICE,
         auth: {
