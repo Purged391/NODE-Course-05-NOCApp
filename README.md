@@ -21,7 +21,11 @@ npm install
 ```
 docker compose up -d
 ``` 
-6. Run
+5. Start Prisma
+```
+npx prisma migrate dev
+``` 
+1. Run
 ```
 npm run dev
 ```
